@@ -157,7 +157,6 @@
       background: rgba(15, 23, 42, 0.95);
     }
 
-    /* Hero */
     .hero {
       display: grid;
       grid-template-columns: minmax(0, 1.6fr);
@@ -224,3 +223,430 @@
     .hero-title {
       font-size: clamp(26px, 4vw, 34px);
       line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-title span.accent {
+      background-image: linear-gradient(135deg, #2dd4bf, #38bdf8);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 18px;
+      max-width: 480px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .hero-note {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    .hero-note strong {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .hero-right {
+      background: linear-gradient(145deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.2));
+      border-radius: 18px;
+      padding: 14px 14px 12px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .badge {
+      font-size: 11px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.25);
+    }
+
+    .newsletter-card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 14px;
+      padding: 12px 12px 10px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .newsletter-title {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .newsletter-text {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .newsletter-hint {
+      font-size: 10px;
+      color: var(--muted);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .metric {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 12px;
+      padding: 8px 9px;
+      border: 1px solid rgba(30, 64, 175, 0.6);
+    }
+
+    .metric-label {
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .metric-value {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .metric-tag {
+      font-size: 9px;
+      color: rgba(148, 163, 184, 0.9);
+      margin-top: 2px;
+    }
+
+    .section {
+      margin-top: 26px;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .section-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-text {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 540px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .pill {
+      font-size: 11px;
+      padding: 6px 10px;
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: rgba(209, 213, 219, 0.9);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .card-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 14px;
+      padding: 12px 12px 11px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .card-label {
+      font-size: 11px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .card-text {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+      font-size: 11px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .footer a {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer a:hover {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="logo">
+        <div class="logo-mark">P</div>
+        <div>
+          <div class="logo-text-main">Puelche Capital</div>
+          <div class="logo-text-sub">Estrategia · Inversiones · Gestión de capital</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a class="btn btn-ghost nav-cta" href="#newsletter">Unirme a la lista</a>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-inner">
+        <section>
+          <div class="eyebrow">
+            <span class="eyebrow-pill">Nuevo</span>
+            <span>Newsletter para quienes quieren dejar de apostar con su dinero</span>
+          </div>
+          <h1 class="hero-title">
+            Aprende a pensar como
+            <span class="accent">gestor de capital</span>,
+            no como apostador.
+          </h1>
+          <p class="hero-subtitle">
+            En Puelche Capital comparto cómo analizo mi propio patrimonio, los principios que uso para invertir en
+            acciones y cripto, y los procesos para multiplicar capital sin vender humo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+               href="https://puelchecapital.substack.com"
+               target="_blank"
+               rel="noopener">
+              Unirme al newsletter gratuito
+            </a>
+            <a class="btn btn-ghost"
+               href="https://www.instagram.com"
+               target="_blank"
+               rel="noopener">
+              Ver Puelche Capital en Instagram
+            </a>
+          </div>
+          <p class="hero-note">
+            <strong>1 email a la semana.</strong> Educación honesta, nada de “señales mágicas”.
+          </p>
+        </section>
+
+        <aside class="hero-right" id="newsletter">
+          <div class="badge">
+            <span class="pulse-dot"></span>
+            Apertura anticipada a la comunidad
+          </div>
+          <div class="newsletter-card">
+            <div>
+              <h2 class="newsletter-title">Newsletter Puelche Capital</h2>
+              <p class="newsletter-text">
+                Estrategia, mentalidad y análisis de mercados para que aprendas a gestionar tu capital con cabeza fría.
+              </p>
+            </div>
+
+            <div class="newsletter-form">
+              <a class="btn btn-primary"
+                 href="https://puelchecapital.substack.com"
+                 target="_blank"
+                 rel="noopener">
+                Suscribirme al newsletter
+              </a>
+            </div>
+            <p class="newsletter-hint">
+              Sin spam. Puedes salirte cuando quieras.
+            </p>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <div class="metric-label">Enfoque</div>
+              <div class="metric-value">Largo plazo</div>
+              <div class="metric-tag">Gestión, no apuestas</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Mercados</div>
+              <div class="metric-value">Acciones & cripto</div>
+              <div class="metric-tag">NYSE, BTC, ETH y más</div>
+            </div>
+            <div class="metric">
+              <div class="metric-label">Formato</div>
+              <div class="metric-value">1 email/semana</div>
+              <div class="metric-tag">Claro y accionable</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <section class="section" id="servicios">
+      <div class="section-grid">
+        <div>
+          <h2 class="section-title">Qué vas a encontrar en Puelche Capital</h2>
+          <p class="section-text">
+            No vas a ver promesas de “hazte rico en 30 días”. Aquí hablamos de procesos, riesgo y decisiones
+            inteligentes: cómo usar los mercados para construir patrimonio, no para jugar al casino.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Educación financiera práctica</span>
+            <span class="pill">Estrategia y mentalidad</span>
+            <span class="pill">Acciones en NYSE/Nasdaq</span>
+            <span class="pill">Cripto con criterio</span>
+            <span class="pill">Gestión de riesgo</span>
+          </div>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-label">Newsletter</div>
+            <div class="card-title">1 idea fuerte por semana</div>
+            <p class="card-text">
+              Un email donde desarmo un concepto clave: errores que matan capital, frameworks para decidir, análisis de
+              activos y más. En lenguaje simple.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Contenido</div>
+            <div class="card-title">Acciones y cripto sin humo</div>
+            <p class="card-text">
+              Explicaciones claras sobre cómo miro el mercado: qué me importa, qué ignoro y cómo filtro oportunidades
+              reales de ruido.
+            </p>
+          </article>
+          <article class="card">
+            <div class="card-label">Próximamente</div>
+            <div class="card-title">Curso y comunidad</div>
+            <p class="card-text">
+              Una membresía para quienes quieran ir más profundo: sesiones, Q&A y recursos para construir su propio
+              sistema de inversión.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="section-grid">
+        <div>
+          <h2 class="section-title">Quién está detrás de Puelche Capital</h2>
+          <p class="section-text">
+            Soy el fundador de Puelche Capital. Analizo mi propia situación financiera y mis inversiones en acciones y
+            criptomonedas con un objetivo claro: multiplicar capital siendo responsable con el riesgo. Comparto lo que
+            hago y cómo pienso para que más personas puedan tomar mejores decisiones con su dinero.
+          </p>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-label">Principios</div>
+            <div class="card-title">Lo que guía todo lo que hago</div>
+            <p class="card-text">
+              • Jugar un juego largo, no buscar golpes de suerte.<br/>
+              • Ser transparente con los riesgos, no solo con los retornos.<br/>
+              • Enseñar desde la humildad: lo que comparto es experiencia, no verdad absoluta.<br/>
+              • Buscar que todos ganen: yo, mi capital y quienes se educan conmigo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Puelche Capital. Todos los derechos reservados.</div>
+      <div class="footer-links">
+        <a href="#newsletter">Unirme al newsletter</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
